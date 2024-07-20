@@ -7,11 +7,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
+
   <body>
+    <button id="play-button" onclick="document.getElementById('bg_audio').play()"></button>
     <div class="main_container">
+
       <div class="login_container">
-        <h1 class="login_logo">Login</h1>
+        <audio id="bg_audio" src="audio/audio.mp3" autoplay loop></audio>
         <form action="">
+          <h1 class="login_logo">Login</h1>
+          <hr>
           <div class="input-box">
             <label for="email">Email:</label>
             <input type="text" name="email" id="email" placeholder="Email" />
@@ -26,8 +31,11 @@
             />
           </div>
           <div class="remember_container">
+            <div class="checkbox">
+              <input type="checkbox" name="slider" id="slider" />
+              <label for="slider" class="slider"></label>
+            </div>
             <div class="remember">
-              <input type="checkbox" name="remember" id="remember" />
               <label for="remember">Remember me</label>
             </div>
             <div class="forgot">
@@ -37,6 +45,7 @@
           <div class="login_btn">
             <button type="submit">Login</button>
           </div>
+          <hr>
           <div class="signup_container">
             <p>Don't have an account? <a href="#">Sign up</a></p>
           </div>
