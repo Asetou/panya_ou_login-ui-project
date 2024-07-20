@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-
   <body>
-    <button id="play-button" onclick="document.getElementById('bg_audio').play()"></button>
+    <button
+      id="play-button"
+      onclick="document.getElementById('bg_audio').play()"
+    ></button>
     <div class="main_container">
-
       <div class="login_container">
         <audio id="bg_audio" src="audio/audio.mp3" autoplay loop></audio>
         <form action="">
           <h1 class="login_logo">Login</h1>
-          <hr>
+          <hr />
           <div class="input-box">
             <label for="email">Email:</label>
             <input type="text" name="email" id="email" placeholder="Email" />
@@ -45,7 +46,7 @@
           <div class="login_btn">
             <button type="submit">Login</button>
           </div>
-          <hr>
+          <hr />
           <div class="signup_container">
             <p>Don't have an account? <a href="#">Sign up</a></p>
           </div>
